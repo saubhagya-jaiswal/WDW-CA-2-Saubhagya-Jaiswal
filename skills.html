@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills - Saubhagya Jaiswal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">Saubhagya</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Skills & Projects</h2>
+
+  <div class="flex-cards">
+    <div class="skill-card" style="background:#f9f3ff;border:2px solid #e0c3ff;">
+      <h3>C Programming</h3>
+      <p>Basics, pointers, arrays; solved multiple practice problems.</p>
+    </div>
+
+    <div class="skill-card" style="background:#f3fff6;border:2px solid #b9ffd8;">
+      <h3>Python & ML</h3>
+      <p>Basic data handling, sklearn models, numpy/pandas.</p>
+    </div>
+
+    <div class="skill-card" style="background:#fff9f3;border:2px solid #ffd9b3;">
+      <h3>Web Development</h3>
+      <p>Created this multi-page portfolio website using HTML/CSS.</p>
+    </div>
+  </div>
+
+  <h3>Projects</h3>
+  <ul>
+    <li>Portfolio Website — This project.</li>
+    <li>Python Chatbot — Simple rule-based bot.</li>
+    <li>Calculator Web App — Basic JS project.</li>
+  </ul>
+
+</main>
+
+<footer class="footer">© <span id="yr3"></span> Saubhagya Jaiswal</footer>
+
+<script>
+  document.getElementById('yr3').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

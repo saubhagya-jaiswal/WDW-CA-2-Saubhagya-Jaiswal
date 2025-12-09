@@ -1,0 +1,47 @@
+/* styles.css - Basic CSS and comments as required */
+
+/* Reset & basics */
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, Arial, sans-serif}
+body{background:#fbfbff;color:#222;line-height:1.5}
+
+/* Nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0}
+.logo{font-weight:700}
+nav a{margin-left:16px;text-decoration:none;color:#333;padding:6px 8px;border-radius:6px}
+nav a.active, nav a:hover{background:#f0f0ff}
+
+/* Container */
+.container{max-width:1000px;margin:28px auto;padding:0 16px}
+
+/* Hero */
+.hero{padding:36px 0}
+.hero h1{font-size:2rem;margin-bottom:8px}
+.btn{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;background:#4b6cff;color:white;margin-top:12px}
+
+/* Quick cards using floats for practice (as spec requires) */
+.quick{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.card{flex:1;padding:12px;border-radius:8px;background:#fff;border:1px solid #eee;min-width:160px}
+
+/* About page */
+.about-page{display:flex;gap:20px;align-items:flex-start}
+.about-left{flex:0 0 210px}
+.profile{width:200px;height:200px;object-fit:cover;border-radius:12px;border:3px solid #eee}
+.about-right{flex:1}
+
+/* Skills cards using flexbox (required) */
+.flex-cards{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+.skill-card{flex:1 1 280px;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+
+/* Contact form */
+.contact-form{max-width:600px;display:flex;flex-direction:column;gap:10px}
+.contact-form label{font-weight:600}
+.contact-form input,.contact-form textarea{padding:10px;border:1px solid #ddd;border-radius:8px}
+
+/* Footer */
+.footer{margin-top:30px;padding:18px;text-align:center;color:#666;border-top:1px solid #eee}
+
+/* Responsive */
+@media (max-width:700px){
+  .about-page{flex-direction:column;align-items:center}
+  .about-left{flex-basis:auto}
+}

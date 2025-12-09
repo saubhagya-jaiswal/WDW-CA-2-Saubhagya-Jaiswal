@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saubhagya Jaiswal - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="logo">Saubhagya</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I'm Saubhagya Jaiswal</h1>
+      <p>1st Year CSE (AI/ML) student at KIET Ghaziabad.</p>
+      <a class="btn" href="about.html">Know more</a>
+    </section>
+
+    <section class="quick">
+      <div class="card">Roll No: 202501100289</div>
+      <div class="card">Branch: CSE (AI/ML)</div>
+      <div class="card">Phone: 8090148053</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="yr"></span> Saubhagya Jaiswal — Portfolio
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
